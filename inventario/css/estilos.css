@@ -1,8 +1,13 @@
-
+body{
+    margin:0;
+    padding:0;
+    background-color: #276cda;
+}
 body,html{
-    background-color: aqua;
-    height: 100%;
-    width: 100%;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
 }
 
 .main-container{
@@ -22,10 +27,22 @@ body,html{
 
 
 .navbar{
-    background-color: rgb(191, 140, 239);
+    background-color:#f7d8a1;
 }
 .title{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+}
+.footer{
+    background-color:#f7d8a1;
+    height: 20px;
+}
+.hero{
+    height: auto;
+    width: 100%;  
+}
+.parrafo{
+margin-left: 15px;
 }

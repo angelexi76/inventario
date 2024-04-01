@@ -6,10 +6,6 @@
     </a>
    
    
-     
-    
-   
-
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -21,10 +17,12 @@
 <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
-         <a class="navbar-item">Inicio</a>
+         <a class="navbar-item" href="index.php?vista=inicio">Inicio</a>
+         
      
         <div class="navbar-dropdown">
-        <a class="navbar-item">Sobre Nosotros</a>
+        <a class="navbar-item" href="index.php?vista=nosotros">Sobre Nosotros</a>
+
         </div>
       </div>
             <div class="navbar-item has-dropdown is-hoverable">
@@ -66,17 +64,19 @@
 </div>
   </div>
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-            
-          <a class="button is-primary is-rounded">
-            <strong>Mi Cuenta</strong>
-          </a>
-          <a class="button is-link is-rounded">
-            Cerrrar Sesion
-          </a>
-        </div>
-      </div>
+    <div class="buttons">
+  <div class="navbar-item has-dropdown is-hoverable">
+    <a class="button is-primary is-rounded">
+      <strong>Mi Cuenta</strong>
+    </a>
+    <div class="navbar-dropdown">
+      <a class="navbar-item" href="index.php?vista=registro">Registrese</a>
+    </div>
+  </div>
+  <a class="button is-link is-rounded">
+    Cerrar Sesión
+  </a>
+</div>
     </div>
   </div>
   </div>

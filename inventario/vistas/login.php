@@ -1,5 +1,6 @@
-<?php include "./inc/navbar.php"?>
-
+<?php include "./inc/navbar.php";?>
+<?php include "./php/conexion.php";?>
+<title>Formulario de Inicio de Usuario</title>
 <section class="section is-medium">
   <h1 class= "title">Inicia sesion</h1>
   </section>
@@ -29,7 +30,7 @@
 <div class="field">
   <p class="control">
     <button class="button is-success">
-      Login
+      Ingresar
     </button>
   </p>
 </div>

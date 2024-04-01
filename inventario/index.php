@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!---condicional para comprobar la vista que se cargara-->
+ <!---condicional para comprobar la vista que se cargara-->
     <?php
         if(!isset($_GET['vista']) || $_GET['vista']==""){
                 $_GET['vista']="login";}
@@ -20,13 +20,17 @@
     
                 include "./inc/menu-burger.php";
 
+
             }    
             else{
                 if($_GET['vista']=="login"){
                     include "./vistas/login.php";
                 }else{
+                    include "./php/conexion.php";
+                    include "./php/register.php";
+                    include "./vistas/registro.php";
                     include "./vistas/pagina404.php";
-                   
+                    
                 }
                 
             }
@@ -34,4 +38,5 @@
       ?>
 <!----?php include "./inc/menu-burger.php"; ?> ?php include "./inc/navbar.php"; ?--->
 </body>
+<?php include "./inc/footer.php"; ?>
 </html>
